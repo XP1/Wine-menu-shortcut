@@ -86,7 +86,7 @@ python "Create Wine menu shortcut.py" '/home/user/.wine/drive_c/Program Files/Pr
 Uses "wine" binary, "win32" arch, and "`~/.wine32`" custom prefix for 32-bit apps.
 
 ```shell
-env WINEARCH=win32 WINEPREFIX="~/.wine32" python "Create Wine menu shortcut.py" '/home/user/.wine/drive_c/Program Files/Program/Program.exe'
+env WINEARCH=win32 WINEPREFIX="$HOME/.wine32" python "Create Wine menu shortcut.py" '/home/user/.wine/drive_c/Program Files/Program/Program.exe'
 ```
 
 #### Auto
@@ -176,5 +176,5 @@ Wine creates DESKTOP files in the "`~/.local/share/applications/wine`" directory
 If the Wine menu item does not appear immediately, you may need to run the command:
 
 ```shell
-update-desktop-database "~/.local/share/applications"
+update-desktop-database ~/.local/share/applications
 ```
