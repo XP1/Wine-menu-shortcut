@@ -86,7 +86,7 @@ python "Create Wine menu shortcut.py" '/home/user/.wine/drive_c/Program Files/Pr
 Uses "wine" binary, "win32" arch, and "`~/.wine32`" custom prefix for 32-bit apps.
 
 ```shell
-env WINEARCH=win32 WINEPREFIX="$HOME/.wine32" python "Create Wine menu shortcut.py" '/home/user/.wine/drive_c/Program Files/Program/Program.exe'
+env WINEARCH=win32 WINEPREFIX="$HOME/.wine32" python "Create Wine menu shortcut.py" '/home/user/.wine32/drive_c/Program Files/Program/Program.exe'
 ```
 
 #### Auto
